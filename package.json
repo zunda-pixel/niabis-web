@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "biome lint -- apply ./app",
+    "format": "biome format ./app --write",
+    "check": "biome check --apply ./app",
     "pages:build": "bunx @cloudflare/next-on-pages",
     "preview": "bun pages:build && wrangler pages dev .vercel/output/static",
     "deploy": "bun pages:build && wrangler pages deploy .vercel/output/static",
@@ -19,6 +21,7 @@
     "next": "14.1.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.7.0",
     "@cloudflare/next-on-pages": "1",
     "@cloudflare/workers-types": "^4.20240405.0",
     "@types/node": "^20",
