@@ -1,4 +1,16 @@
 {
+  "applinks": {
+    "details": [
+        {
+          "appIDs": [
+            "PU5HXZ4FZ2.com.zunda.niabis"
+          ],
+          "paths": [
+            "*"
+          ]
+      }
+    ]
+  },
   "webcredentials" : {
     "apps" : [
       "PU5HXZ4FZ2.com.zunda.niabis"
